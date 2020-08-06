@@ -13,6 +13,27 @@
   }
 }
 
+table { /* le quadrillage externe */
+  /*border: 3px double blue; /* Bordure du tableau double et bleue */
+  margin: auto; /* Centrer horizontalement le tableau */
+  border-collapse: collapse; /* éviter d'avoir un quadrillage double */
+  }
+  th { /* Les cellules d'en-têtes */
+  border: 2px solid blue;
+  color: white;
+  font-size: 1.2em;
+  font-family: "Trebuchet MS";
+  background-color: black;
+  }
+  td { /* Les cellules normales */
+  border: 2px solid blue;
+  font-family: "Comic Sans MS";
+  font-size: 0.8em;
+  padding: 8px; /* Remplissage de 8 pixels pour éviter que
+  le texte touche les bordures */
+  vertical-align: middle; /* Centrer le contenu des cellules verticalement */
+  text-align: center; /* Centrer le contenu des cellules horizontalement */
+  }
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,7 +44,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+img :hover , img:active{
+  font-size: 150%;
+}
 .App-link {
   color: #61dafb;
 }
